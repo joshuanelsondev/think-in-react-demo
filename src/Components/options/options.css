@@ -1,0 +1,17 @@
+.yourOptions, .clean, .work {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px; 
+}
+
+.yourOptions {
+  background: #39424F;
+}
+
+.clean, .work {
+    background: #444A5F;
+    border-bottom: 1px solid #96939345;
+    height: 100px;
+    align-items: center;
+}
