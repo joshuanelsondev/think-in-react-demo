@@ -1,5 +1,8 @@
 // Options.jsx
 import './options.css';
+import Option from '/src/Components/Option';
+import data from '/src/assets/data';
+
 
 export default function Options () {
 
@@ -9,14 +12,9 @@ export default function Options () {
                 <p>Your Options</p>
                 <p>Remove All</p>
             </div>
-            <div className='clean'>
-                <p>1.Clean</p>
-                <p>Remove</p>
-            </div>
-            <div className='work'>
-                <p>2.Work</p>
-                <p>Remove</p>
-            </div>
+            {data.map((chore, i) => {
+                return <Option key={i} i={i + 1} chore={chore} />
+            })}
         </div>
     )
         
